@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Miss You</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe5e5; /* ganti dengan warna latar belakang yang diinginkan */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .heart {
+    animation: float 5s infinite linear;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+  .flower {
+    animation: float 3s infinite linear;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+  .star {
+    animation: float 4s infinite linear;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+  }
+  .moon {
+    animation: float 6s infinite linear;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+  .heart-decoration {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    fill: #ff6b6b;
+    animation: float 6s infinite linear;
+  }
+  .heart-decoration:nth-child(2) {
+    top: 10%;
+    right: 5%;
+    animation-duration: 4s;
+  }
+  .heart-decoration:nth-child(3) {
+    bottom: 15%;
+    left: 5%;
+    animation-duration: 5s;
+  }
+  .heart-decoration:nth-child(4) {
+    top: 20%;
+    right: 10%;
+    animation-duration: 3s;
+  }
+  .heart-decoration:nth-child(5) {
+    bottom: 25%;
+    left: 15%;
+    animation-duration: 6s;
+  }
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+  h1 {
+    color: #ff6b6b;
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+  }
+  .message {
+    color: #333;
+    font-size: 24px;
+    margin: 20px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>I Miss You Shifa</h1>
+  <svg width="100" height="100" viewBox="0 0 24 24" fill="#ff6b6b" xmlns="http://www.w3.org/2000/svg" class="heart">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+  </svg>
+
+  <svg width="100" height="100" viewBox="0 0 24 24" fill="#FFD700" xmlns="http://www.w3.org/2000/svg" class="flower">
+    <path d="M11.5 1.5c-1 2.2-3.2 4.4-5.4 5.4-1.3.6-2.6.9-4 .9 1.4-.6 2.7-1.7 3.4-3 .7-1.2 1-2.6 1-4 0 1.4-.6 2.7-1.7 3.4-1.2.7-2.8.7-4 0-1.2-.7-1.7-2-1.7-3.4 0 1.4.4 2.8 1 4 1.2-.7 2.6-1 4-1 .6-1.3 1.7-2.4 3-3 2.2-1.2 4.4-.4 5.4 1.6.6-1.3 1.8-2.6 3-3 1.3-.6 2.7-.4 3.9.5-1.2.9-2.3 1.1-3.1.5-1.1-.8-2.5-1.1-3.8-.5-.4-.3-.7-.7-.8-1.2-1.3.6-2.7 1.6-3.1 2.4-.6 4.2.6 5.4 2.8-.7.2-1.3.5-1.9.9-.2-.6-.6-1.1-1-1.6C16.6.2 15.5-.1 14.4.2c-.7.4-1.2 1-1.7 1.6-.7-.5-1.4-.9-2.3-1.2z"/>
+  </svg>
+
+  <svg width="100" height="100" viewBox="0 0 24 24" fill="#FFD700" xmlns="http://www.w3.org/2000/svg" class="star">
+    <path d="M12 2l2.371 7.262h7.629l-6.169 4.499 2.371 7.263L12 16.524l-6.203 4.5 2.371-7.263-6.169-4.499h7.629L12 2z"/>
+  </svg>
+
+  <svg width="100" height="100" viewBox="0 0 24 24" fill="#f8f8f8" xmlns="http://www.w3.org/2000/svg" class="moon">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.076 16.025c-.168-2.242-1.796-4.088-3.904-4.62.695-1.18 1.097-2.537 1.097-3.979C17.269 3.27 14 .5 10 .5S2.731 3.27 2.731 7.426c0 1.442.402 2.799 1.097 3.979-2.108.532-3.736 2.378-3.904 4.62-.2 2.667.951 5.196 3.041 6.606l.333.217c.467.304 1.066.099 1.375-.366.882-1.353 2.288-2.219 3.865-2.48 1.744 2.668 4.943 3.044 7.183 3.112.204.015.39-.126.448-.324.05-.207-.057-.422-.228-.524-2.24-.49-5.439-.865-7.183-3.112 1.576.261 2.983 1.127 3.865 2.48.309.465.908.67 1.375.366l.333-.217c2.089-1.41 3.24-3.939 3.041-6.606zm-7.828 2.904c-.509.22-1.085.133-1.495-.196-.88-.717-1.927-1.172-3.118-1.337-.073-.009-.147.009-.2.056-.527.496-1.172.889-1.885 1.147.556.264 1.06.684 1.46 1.198.424.547.91 1.358.715 2.441-.013.086-.022.17-.024.255.518-.333 1.065-.719 1.64-1.155 1.344.345 2.472.111 3.314-.716.426-.347.961-.768 1.616-1.274-.28-.407-.672-.84-1.177-1.236z"/>
+  </svg>
+
+  <svg width="50" height="50" viewBox="0 0 24 24" fill="#ff6b6b" xmlns="http://www.w3.org/2000/svg" class="heart-decoration">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+  </svg>
+
+  <svg width="50" height="50" viewBox="0 0 24 24" fill="#ff6b6b" xmlns="http://www.w3.org/2000/svg" class="heart-decoration">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+  </svg>
+
+  <svg width="50" height="50" viewBox="0 0 24 24" fill="#ff6b6b" xmlns="http://www.w3.org/2000/svg" class="heart-decoration">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+  </svg>
+
+  <svg width="50" height="50" viewBox="0 0 24 24" fill="#ff6b6b" xmlns="http://www.w3.org/2000/svg" class="heart-decoration">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+  </svg>
+
+  <svg width="50" height="50" viewBox="0 0 24 24" fill="#ff6b6b" xmlns="http://www.w3.org/2000/svg" class="heart-decoration">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+  </svg>
+
+  <p class="message">I miss you so much, my ex.</p>
+</div>
+
+</body>
+</html>
